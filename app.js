@@ -24,6 +24,7 @@ const displayUI = async () => {
 };
 export const init = async (url) => {
   const drinks = await fetchData(url);
+
   if (!drinks) {
     // console.log('no item in array');
     displayAllDrinks();

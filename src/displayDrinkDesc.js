@@ -1,6 +1,8 @@
 import get from './getElement.js';
+import { hideLoading } from './toggleLoading.js';
 
 const displayDrinkDesc = (drink) => {
+  hideLoading();
   const { strDrink: name, strDrinkThumb: img, strInstructions: desc } = drink;
   const list = [
     drink.strIngredient1,
